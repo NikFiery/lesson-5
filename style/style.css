@@ -1,0 +1,332 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    position: relative;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 666;
+}
+
+.header__container {
+    background: #4D98A4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logo {
+    font-family: 'Cherry Swash', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #ffffff;
+
+    margin-left: 4em;
+}
+
+.nav {
+    margin-right: 4rem;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #DCE3E4;
+    font-size: 18px;
+    font-weight: lighter;
+    justify-content: space-around;
+}
+
+.nav__link::after {
+    content: '\002F';
+    padding: 0 1rem;
+}
+
+.nav__link:nth-child(4)::after {
+    content: '';
+}
+
+/*====section tonic=====*/
+
+.tonic {
+    background: url(../img/background/sea.png) center center no-repeat;
+    background-size: cover;
+
+}
+
+.tonic__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tonic__title {
+    text-align: center;
+    font-size: 44px;
+    font-weight: bold;
+    color: #E4E4E4;
+    margin-top: 4rem;
+
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-bottom: 2em;
+}
+
+.tonic__circle {
+    width: 7px;
+    height: 7px;
+    background: #ffffff;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.tonic__circle:hover {
+    cursor: pointer;
+    background: #636363;
+    width: 9px;
+}
+
+.tonic__circle:active {
+    cursor: pointer;
+    background: #DCE3E4;
+    width: 8px;
+}
+
+.tonic__btn {
+    font-size: 30px;
+    font-weight: 300;
+    color: #E4E4E4;
+    padding: 3px 1em;
+    background: transparent;
+    border: 1px solid #ffffff;
+    outline: none;
+    margin: 3rem 0 8rem 0;
+    cursor: pointer;
+}
+
+.tonic__btn:hover {
+    border: 1px solid #4D98A4;
+    color: #a3a3a3;
+    border-radius: 9%;
+}
+
+.tonic__btn:active {
+    color: #a3a3a3;
+    border: 1px solid #ffffff;
+}
+
+/*explore*/
+
+.explore__container {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+}
+
+.images>img {
+    padding: 50px;
+    margin-top: 1rem;
+    width: 10.5em;
+}
+
+.explore__title {
+    font-size: 30px;
+    font-weight: lighter;
+    margin: 6rem 0 3rem 0;
+}
+
+.explore__text {
+    font-size: 14px;
+}
+
+/*dhavan*/
+.dhavan__container {
+    background: #00D089;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.dhavan__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 9.2rem;
+    margin-top: 5.7rem;
+}
+
+
+.dhavan__avatar {
+    /*уверен, что это можно сделать иначе*/
+    width: 9rem;
+
+}
+
+.dhavan__name {
+    color: #e4e4e4;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.dhavan__title {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+.dhavan__quotes {
+    width: 8.5rem;
+}
+
+.dhavan__text {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #ffffff;
+    margin: 4.4rem 0 6.7rem 9.2rem;
+}
+
+/*maps*/
+.maps__container {
+    background: url(../img/background/maps.png) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.maps__circle {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 431px;
+    height: 431px;
+    background: #ffffff;
+    opacity: 0.85;
+    border: 1px solid #d6d6d6;
+    border-radius: 50%;
+    margin: 2.9rem 0;
+}
+
+form {
+    margin-left: 5.5rem;
+    margin-top: 3.2rem;
+    padding: 2rem 0px;
+}
+
+.form__name {
+    font-size: 14px;
+    width: 276px;
+    height: 32px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.form__email {
+    font-size: 14px;
+    width: 276px;
+    height: 32px;
+    padding-left: 10px;
+    margin: 1rem 0;
+    outline: none;
+}
+
+.form__message {
+    font-size: 14px;
+    width: 276px;
+    height: 81px;
+    padding-left: 10px;
+    padding-top: 10px;
+    resize: none;
+    border-style: ridge;
+    outline: none;
+
+}
+
+.maps__bird {
+    width: 70px;
+    height: 70px;
+    background: #00D089;
+    border-radius: 50%;
+
+}
+
+.bird__container {
+    position: relative;
+    margin-top: 36px;
+    margin-left: 9px;
+}
+
+.check-sign {
+    position: absolute;
+}
+
+#check-part-1 {
+    width: 30px;
+    height: 12px;
+    transform: rotate(45deg);
+    border-radius: 16%;
+    background: #FAFBF9;
+}
+
+#check-part-2 {
+    width: 40px;
+    height: 12px;
+    transform: rotate(-45deg);
+    left: 14px;
+    top: -6px;
+    border-radius: 16%;
+    background: #FAFBF9;
+}
+
+/*footer*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00D089;
+}
+
+footer>p {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 8px 0;
+
+}
