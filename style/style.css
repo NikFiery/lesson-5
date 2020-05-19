@@ -215,7 +215,7 @@ ul {
     font-size: 18px;
     font-weight: lighter;
     color: #ffffff;
-    margin: 4.4rem 0 6.7rem 9.2rem;
+    margin: 4.4rem 0 6.7rem 0;
 }
 
 /*maps*/
@@ -328,5 +328,4 @@ footer>p {
     font-size: 14px;
     color: #ffffff;
     margin: 8px 0;
-
 }
